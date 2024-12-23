@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RangManch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: url('https://source.unsplash.com/1920x1080/?party') center/cover no-repeat, linear-gradient(135deg, rgba(72, 167, 229, 0.8), rgba(35, 78, 112, 0.8));
+            color: white;
+        }
+    </style>
+    
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white">
+        <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">RangManch</h1>
+            <div class="hidden md:flex space-x-6">
+                <a href="#events" class="hover:text-gray-200">Events</a>
+                <a href="#schedule" class="hover:text-gray-200">Schedule</a>
+                <a href="#speakers" class="hover:text-gray-200">Speakers</a>
+                <a href="#location" class="hover:text-gray-200">Location</a>
+                <a href="#tickets" class="hover:text-gray-200">Tickets</a>
+            </div>
+        </nav>
+        <div class="container mx-auto px-4 py-20 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6">Celebrate India's Biggest Events</h2>
+            <p class="text-xl mb-8">Join us for an unforgettable experience of culture, music, and technology</p>
+            <a href="#tickets" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Book Tickets Now</a>
+        </div>
+    </header>
+    
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Featured Events</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://www.hlimg.com/images/events/738X538/sunburn_festival_1478503332e.jpg">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">Sunburn Festival</h3>
+                    <p class="text-gray-600 mb-4">Goa | Dec 28-30, 2024</p>
+                    <a href="#tickets" class="ticket-btn inline-block bg-blue-600 text-white px-6 py-2 rounded-full">Book Now</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://images.deccanherald.com/deccanherald/2024-07/08c5d725-cf71-411e-9ab4-4d010730b1b9/1500x500.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true" alt="Tech Summit" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">India Tech Summit</h3>
+                    <p class="text-gray-600 mb-4">Bangalore | March 15-17, 2024</p>
+                    <a href="#tickets" class="ticket-btn inline-block bg-blue-600 text-white px-6 py-2 rounded-full">Book Now</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://doverlanemusicconference.org/wp-content/uploads/2023/02/22_01_23_Troilee_Dutta_Moisilee-Dutta_04c-scaled.webp" alt="Classical Music" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">Dover Lane Music Conference</h3>
+                    <p class="text-gray-600 mb-4">Kolkata | January 22-25, 2024</p>
+                    <a href="#tickets" class="ticket-btn inline-block bg-blue-600 text-white px-6 py-2 rounded-full">Book Now</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://assets.cntraveller.in/photos/619b6bbe112a7d711c22e11a/16:9/w_1024%2Cc_limit/GettyImages-632166974.jpg" alt="Literature Festival" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">Jaipur Literature Festival</h3>
+                    <p class="text-gray-600 mb-4">Jaipur | February 1-5, 2024</p>
+                    <a href="#tickets" class="ticket-btn inline-block bg-blue-600 text-white px-6 py-2 rounded-full">Book Now</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-international-film-festival-promotion-banner-poster-image_195292.jpg" alt="Film Festival" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">International Film Festival</h3>
+                    <p class="text-gray-600 mb-4">Mumbai | October 10-18, 2024</p>
+                    <a href="#tickets" class="ticket-btn inline-block bg-blue-600 text-white px-6 py-2 rounded-full">Book Now</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSEhMWFRUXGBgXGBgXFxgXFRcYFxoWFxcVHhgYHSggGBolHRYXITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGxAQGy8fHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0rLS0tLS0tLS0tK//AABEIAKgBKwMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQIDBgEAB//EAEEQAAEDAgQDBgMHAQYGAwEAAAECAxEAIQQSMUEFUWEGEyJxgZEUMqFCUrHB0eHwIxUzQ2Jy8QcWU4KS0iWDoiT/xAAZAQADAQEBAAAAAAAAAAAAAAABAgMEAAX/xAApEQACAgIBBAEEAgMBAAAAAAAAAQIRAyESBBMxQSIyUWFxQqEUgfAj/9oADAMBAAIRAxEAPwBdjC6I7oJOuYq+UC0XnUkgAXJJgCgMTjcQ2UZktlKyAFJzEHSRcyD5gaHkan2UZ7xxSXCoJGW5BsSSBc6cr+0wQX2sw7bSVBBBGZsJMgkEEqy6zaV7bmsUurfeWMssK4WFtmRt6aVMCskji7g/xKtHHHfvA+grX3kQ7bNUBXRWXTx9zkKuT2gXugV3didwZo4rqaQJ7Rc0VYjtGndB9/2o92IODHoFSpMntC3uCP55Vanj7XWjzj9zuLGsV6KXp421z/D9asTxdn734UeS+53FhoTXQmhRxNr74+tWJxzZ+2PrXckdxL8tcIqAxSPvD3qQfR95PuK60dxOgVNNQ71P3h7igsbxJCQRIJ5flXNjEOK47LYQTbrHKl44muCALncnwjkPOlTmNKiSokaEAek3i1SYxKRB0j+b0toI5wzy8o9COu0npXlygqWZUYur7IFrD1oXF8SCAkRrEgawa8y4VQVwRBhMymDz6/pQbGithuExYKLwConTfr1rjSQoBABSEnxBQuq8gSNpFVKZbSkEWKQY1jMdTQLPESpaUqJAUfyvfe9BSsLjRXxp/OtSUCSkg6iIge50+tK1PqdACyIknTxEmZ/Ci33UBxYCM6b9FbCQdqpwOCKoJROeQkkm0EX6mmBQsdaSlUEk6z0MkDz2PrWu7MYcBayAMyQMsKCheCRIsdRWf4izlDRKQBAvsTAm+nKieI8ZhTndk+JIQTmJ87kDkBpQsDCu0HHVEKSFQZKSE7gW1nS9ZRzFKUbkna9QxD5JlUmd64pY0/3rrDR1RrzaE6knXQCZ9dq5m22qSQRNiI6UDqL1tj7M10NwDNv5pRHBML3roTfmTyA1/SmHaXC5XZSmywIjnpA9h71yWjr2JE7VNthQkiCNDvrtbeiMKyEKV3lwBpoSfI1evHJSvM2kotbN4uYtPrQoIC8wUgZhBImIv/P0qgxyNcxLxKicxMkm+p6/w1HPQGo+oIJCgoEgiR0IOoI0UOhqrG4ZLygpwSRoNEjcnKLSdzvUgoc6kFUai5cq2LUqopVw1k6to9hVK+BsH7HsSPzo0GpA02hditXZxk6Zh5K/UVD/AJYb2WsexpyDXQaHGJ1sRL7LfdePqn96qV2Zc2dSfMEVpAqpA0OEQ8mZRXZ18aKQfU/pUDwPEfcSf+4frWwFdFDtxOtmKVwjED/CPoQaHxGDdTdTSgPKtxicWltJUo2HLWsVxrjanVEJUQ3qB5CPrQ7cTrAC9G1TTiB1oAKrqXKXtfkYZDE+dSGLP3j9aXJdogYqSSTr0Fd22doK+MP3j9aicRO9Llv1JC/512rlBnUg/vutd7wdKFaSZEz+tHuYVHhhUEgEjUDneikdRAvTrercOsyYOsCqfhb/ADC5tM369KuwyBnygyDF6nnbjBtF+mhGWRJhj6XANTtv7UEcQZmb6e2laHHDwAATNqy3E2ihUbG4rP0uSTtM0dTji/kkWOPScx1/WvDGkICBYAzrflS81U6kROYzOm0efOtL5ejFxDnncwAMwnS8RVQaTM3nzqfCeEqfk5soFpiZPLWj19mVgSHR7H9a5QmxHQAAIiJHW+u996G+ARM+L3oZa1JJBkEWIOxrgeP3qWpo5ByMIkaE1Y+0VklSjJ10pV8YRuab8K4c8+kqSQlOkq35xAo1M5oK4O8MPmygEqiSeQ2tRHEOIl1IEBJBkKGo96r/AOXMR99Hur/1r3/L2I++j3P/AK09ZaoS0LXMISVKKzmVqd761xeFnVU+g/CreKYR5gArIIO6bieRtQXxCudJU0MWLwAO/wBK78COf0qn4lXOo/Fq513zDs2IY5VYErH2le9OOEJQTBApqcMg/ZFNFSl4LymoumZMPODf6CrEYpe4B+lH4/CBKraUZgMChSZImljJt0GSjxtilOO5p9jUxj08iPT9DR/EeGpCcybUjUmrJ7pk3FNWhgMejn7girUYtB0UPcUixTMjUjqKlh8OALkq6mn4i0kh9340BE0i4nx4AQmyhINrH+XpPxJCg4csbbxtS50ObifWaPbl9hlGD/lRbjsepYubbDlQIJNqkrNuk+1RDkbfSl4NFFgb8NHiAK8AKiVCrwlBb/zTM9I0oUc+nkVJTOl/21rwNGsLDYEaqSZm9jt7VBoozJKk2BBMcqHJF49FkkrRRisOpBAUIkAjyIorg+HzuJSRI1PkLzTPjj7TyBlsoaaabjWpcAKG0lSleI200H70W9aMqxy9qia8CEkgmSJIuZ6UNhElxQbFkzJ6Dz9frTLFvIXdKhPlUuHd22m6gVG6jB9tNKhhUub5Fs6jwXFAvaHDWC07WPltS3g5JWTyFaDEYlpQIKgQbGlHDsOG3rKSUHeduXnVOpi3jaRPpXxyJs0+DdypAWmaV9o2Q4ElAuJt50+eSFpATrUsLhCmMwufWsEPhH8mmc022z506yQYNq7w7hynlwLJHzK2H719K4nwht5GVQAVsoaj9qUFLbP9OUpjaQPW+tbsVv6jHOSa+KJYZhLaQhIgD+T51cBQvxzf/UT/AOQrh4myP8RPuK1pozcJP0Iu1PBir+q2PEPmA+0Bv5iswiK+gOcXY3dT71nQcEXCpc6z4SooPoBIqc0vJaEJv0CcE4EX1SZDYNzz/wAo61vWWghISkQkWApGntLh0gBMxpATECuDtS0TASs8oAv9a5OKC8OR+jRV6s+52gIiGHL8xFVnjz1yGQBtmVEV0ssV5YF002P8Vh0uJKFiUnUfzesjjuzTqV/04Wna4BHQzRCuNYgp/wANEfauaFe449Yl5A8k/ka7kpIKwyi6bB3OBPiJQBOgzJ/W1MWux6iAVOgE6gCY9ZvVuIl1oK7wqkCDYCSb2A5CoJSsWzVKc4xYyg2M0PqFxFEHiixvr1pfNVYlUCeRB9JvReJDcxi5i1K1v61JvFrToY8jQU1MGh2kHuBrmOWrUn3qkqqqa7TRxpAczjulTaNqgvSq211VIi2U4xgFZUYMiNQPW9UJwqcoBGhkmU36a6VZxI/KZUPLSNyaWrxcLhKlKTa+Yj6RU5ZckXoosWOStsYqYRJOU32gwPagvgZXqQnlBnyEijMSlDaStRKtIBUdTppSXE8SzCB4L7cup5zTRzZX9hJY4LwxycGwdR+P51TiMCxHhBJ/1D9KDTxchI8AJJ2JAi0eutHLWsICjEnUaBNDuZHpopBJb5CLMXMxSIywkDy6+lFYfDSkEzPSq0HISmdbgjQ8770Xh1xaseZtaPV6bJOVO9Fn9moP/VnoBHuSK8eGRuv1CfyNAL404hxQ0ABSAZAH+bnP61xXFXQlI+yJF5kzcST9KonOkY55Pk9jEYXLAzwVCDYW+t6rVhDsqTtal/fEZSTcGauwuKsWxqTYnUE1Xi/JLuPwW/Ak/aFvOpcIYJUCoEIIkE6G+o9qucdKfCQIjXmd/wCdaOYfLpCEpvlAT5VDqHJQ17NGGab/AEPMBiZMJuafIJABVqB9ao4fhUsovFhc9dzXMc54ZHpWJReOPJv/AEQyz7k9IuR407iawnadnO8oyREC/Qa1vMCuwFK+1HDApsuCykidNRWlQbgpx/2Linwm0z53hMCFkhUiPKocRwiGgPmM+UfhUcU8SQNL7Vx3ESMpgm87zN96vCMptF5zcQ/AcLbUEqIIBE3P0ov+yEEpATAygnc386p4Is5H1pSVOEWsI0MUNgsK+U96peVIUM1zmvFvqPeq9trTJd9jN7hzTaSpRCQN4HkNr1LAvAIC27wSJAgz/DS3j3EVBfdjKUwCQoAyZOx8hXlP5mUBKghJvASbGbiZ5g1LLi5KkdDK15DMZxr7JTJ5qm3MAfzSr3XWwLqBAEkTeNYpY9lJ1J5zGtUd4MwCUgpkZvKb0jwWk36HxSbnUENPhUrQFL1I0mw/ygdKz/EcGUGdU860Tqk2OURyH40t4g4FEIQJP3RSYptMvnxqjnZjEnMWybG8dRWly1iOHYgpeSoDeI/KmeM7SKC1BAGUGBNUyQcnoyrRoag+mUkcwasqKhNazMcw6pSDzAq5NB8OEJUn7qlD01H0NForglldFRFdFEWzpoQKouly1eI+dMgMq4ymUJjXN+INZ0vGtQ6MyfIg+1ZXGCFq8z+NTmtjweh3ingpo5QSFAam4IrOYdJUY86dcFIKVbwd6ofYQAGtzdRG5G19r6UEzq2V8Mkk7ZfxpjjFDOPGRMGwOXrpXMK0FJVP3bnc5YM1H7N0p8OgUbwfWnsX2GcZ4Q6002+pKO5cTmQpOiVX8CiR4VKAkbHSqu0fCHcI+GnFpUrIlYKM2iioAaST4T7itsrtA2xgcEhxCHWXGyl5FioJATBA3gnT8xXseGMRxVGILiDh2sM28V5hlJSp0oHOZ8Uf5Y3qUoJmnB1Eoa9bMP2i7Lut4hlt5SGy8EHOVHu05iArMToUnXzFM+O9jnW8MHXMZhlJQhSkQoy7AmEmIUYAA11rS9se5xeDdKXw46ypTycyC0ru1E5mwFAFQCdI1KEzWZ7XuJPDeGJBBIQoEAjMPCibbU1Ijt+QLjnY13DtNunEMuh1SUtpbKipebQpkeIaacxTXC/8O8QmMz2HD5GYMlZzx5gH6Ai2tOeOMfDMcNWpba/hChLgQuVEy2ZSI8Q8B5bV3G9n0u44cRTjGBh87bxUVwtPdhIKOQHhi5ESRHMi8mZZPAsQ4l9YQZw5CXW/8UG8kJFlRE2NwZE7lcKwi0MM4wKR3bi1Ni5zDL3lzaI/pnQ7itNwztAP/k8UzlBK2lNBds+VAbBjWFFPnfnVXaHHtYjCsoYCGnFYkBTZIGRbiXZXtKJUVZhrfeRSTjGa4seGSUXYp4s/iFYZWJAHw5dDf+a3hz/6M/h5z0qt5b68N8VmSG0OJbyyrPmOXxRER4hvWzOJwUfAfEp7vuvh+7gxm+/3umb1+brSLA8MLnDnsKlxpLicSPnXlSS2GsxBEmCQSLbipPp4P16HhnaVeN/0E8FxHeIBOoijcdi0obUpcZQLzv09azOASpoFskFSFFJKFZkEgzIVAkX5UF2gQ4+PE8ITonIdepB+tSWKUVphlGMpX6MsFBTwj734XqeFwa3nCrRM3V+Q51zgiU96Ur+YyEKkwFaes0U1jlM+DILEiJIqvzjGoeRssk2OsM0G4Siwgz1mLnrSPBcSTDjDissqJCtgQR+YpgOJJAK1WgXi4nlWNWqSTzvVMSlGCUvJFqxtxDFtulRPzTY9BUeGNpUMokkmw5+X1qjBYNTpCUCSBfYC+v1rYcJwKWUxIKjqfyHSjOSii2HFKb/BHD8KQhMuXPLYfqaVOtZVG0Tt0OlPyrMqNk3P5CkGMelRJ3NvKownKUtnsdJGGNlDskRmUB0NvauYB4NFSyMxiE+e9EYfBqcBIIArznBFEfN9Kpx+5PqZYpN15M/3hCsw1melNEYVpQzaTexAHtNhQi8NlVETGtNGcEIEinSs8p6Zp2DJhTYA556NebZRZQJPQ/vWe7lX3wfMEfhRq8G4sSQgQB4iST9R9Kipt+GL8W/sFpxGHBJ7uJN/GbxbSaZtMNkAhH1/ekKeHpES6qekRRjWIyCJUrWJAB00Fdxl9xnxXgaLS3EQkfjS7EMZbi6efLpQJKic3dkdVa/U1a3iojOpOXdOv4aVSOvFkJSvR2aV4tUOH0pm5GoMg6EUn4oYWD0/Wr6qyYS0qx8qS9olWR5n8qYsPDytS3ieHW4kBImDP0NJNjxK+CDIohVioBQ6j9R+dMOI4RCVghKpV9qbaXt6VXw/CqUBnGXKLE2nQRO1cccUVTlPL7Rge8U0IcvAs5qLHPY7hrb2JS08qEEKMBWXOoAQ3IuJubGfDTDj+HZZ7t1zhjrBDmVSA7mYdQQoAFxBOVcwR4bxEmbV8J4altSXHGm3xF21i0Ki4JkBY2McxaZHu0nF0Iw3wjDLjaCtLhLzhcV4ClQCJUrwykbjyvNLaug8X5Le1rWBawzCm8EErxbRcSrvVgtQG1dc5/qdNK0T/ZjCfFHDJwK205M4xSFrCUKvAvYkQNSZkSIrA8c42MUzhEIZX/8AzsFsmMwUohoSnLMD+mdedaJz/iEV4lwlh1WFW1kUyQO9So5pWI0BBi567V2jql6Cuz3CWsThVPqwycW6HlIEuFtKgjKnMkyUpGqrC81R2X4Aw4rHKVgklxt0JQyXj4CMwKA7pcgmY6Uq4Px7Ct4RWCxDD6kd4pweINqySMknMk5vDeLTU+Fccw2HGKYXh3u5xBSUIzwsISDmBUpQJJUSZBOtC4juGTyw/hvDcN8aph7h6G8y0NhHfqX3R7vvCoZRCgqRuIigOOYNhT6ksYcMobUttRzKX3ikKACvF8sQrc/NXsBi2WsQh5hp1tpCkq7taipZVCgpWZRMWKbT9k01wbuHJW+t1IzuOuRnBQAtSiJOkwRJqeRtx+IYJRlcjo4Sw3g8K7/Z6sSpbAW44HHBkOVCio5Z1zE2A+U1Rw/h2FZw2GcxLfxT2IbKwCopbS2lKSTGkwpNyCSVHQUWlan0MMpdUhthktud28QHFENhJIQR4YQv5vvedWM4hhbKWHEDENsiW1NO9262gyMp8Sf6cCJCrgAEWktyQmwZ3ss247hfh8yMPiUqUpKjmW1kSFFKSqdZi5MG9xajGuEYB4paThls5ittp4OErKkBZkgkykhCiAqeoFXNPlwtvtd22nDgoYbSoqQkRlWHCIuUgJgDwxMmo4THs51O4ZhIeMmVPZ2EFycziWwd/EbJRmvcSTXcooDlJivheFw7WDcexDHfLRiVMGHFoHhIRIymAJBPrQvHOHIR3LjGcs4hsuJStRK2ynJmRmMkjxjWYIN4iGCMSyy0vCPtOPpLvfFaVhBKlBKiSQoFKs2Y2tf0oXG8QLq0EJQ0htBaabBkIRaTMCScqR0yjqTHLmhGOn+jTgxTck2hFiOENyFBC5T1jryofjOFOXOUkaAzF+RtWgD/ADH850Di+JgyEjMDzqfT5W3tmjqMaS8GfxDJKCga1TjMPKAAhINhptzrQHAj5yhI62BrjraEiTatjmmZVhfpgPZprIVJIuRr5f709K6TuPIS2HNySNeW+lU4LFKXnUpSglO0ajzis2VW7Ru6Vyrg0Et4jUEm5pNisIUqJK5PkZPSrlXM/SuKExz0owg1KzfLpVwt6obcLsgCjCqqkJypoZ9ZOlaLtnkyfsk8pAmwk9KqCqWKUsLIN+VGBw/wGiTaKMKh9SsyUlQGuacv1/Ktah493ChKtCBMfv60oxLxH3j5aV7DKWbTB5EyfOl4IjzRa+oj7SU9AY/AXqOGxwQoErnpqfYmpDgZN1uH+dTVjeDYTbJmPmSfpXLDJ7uhnlwpVTbCnmkuJDpkgj5bj3GwqjvEixyp8gLepr2DfcUrIprum4NxM9KHRgIu7Ybcz1J/Ku3HS2Se3oatLRH94lYiwNqS4rDnNczy8qKCER4QI5kW9yYqbGJaHhOSOUj8RoaLugLT2xelmrUs0Z3dpBBHMGR5VyKzPIaFjQOpMJUNopErEJk+KOhtWkXoR0rE4keL1rZ0kuSdkc2JaPprOg8qU9pkJyBahpIB1AzRt6CmTSrUDx0/0SIzHWNdKyv6y/8AEdf8PQ+OHYgYdbaXviDkU4IbsliZAB+zIFtYq/sjiX/iuJHEOtd8lDIU4i7ScqHSlUGJCQQTMaGsGONOJwb+B7oFLrgXmE5kkFs5AkWP92Pc0Vwjtc7g1uIcYbWcjbCkHwgBnOADEhROcz6VZypk1jck2jQjjLf9osOYrFtYpCG1ZXG2wlDa1E6hKlSfCDO0g9aK4/isS5h1uh/CYtltxLveN/3rGRaVJIAJSYAvJmJ+bSszie1biMQziG8I3hVJQoZQiA6hZGtkkjw2IqfEO2ZeaWw2w1hkOGXSgCV7mTAAnc3PWl5rZT/GyNJpa/ZrsZ2oxKeHM4kLHeLeU2pWURlBeAtoD4E/WqMDjirhJbCj3feIwkkDN3S+6QpNhEwtQCo5b1kcZj82BaQo+FL6koib2W4tUDUy4E9AOpo7A9qgvBqwicOyUZCgkg3URZ0piCufFM6iljO/fr+xZYtaXv8Ao2CsAvE9yoGVJJw2IJPzM/OlfVRAAEaF5XKoMJ+LxRUbtqMDkMOwTlH/ANjhJ6oV0rB8I4y/hu+ZaWVB1vJmUbtnxALTfUBR9xyozhPG3sK0pppSe8XlAdVBWlCAAltKVSmB4on75tQ7kVUW9nPpZ02vBqe0KonEtocyYltUpKSFpdQg3Uk3SVNpvP8A0hzonjbo+KTJ1w7Uf+bsUgd4jinWHkvuFX9JQQSlAUFOlLY/uwARc7Tc35W8W7TyjK5hWFqy5RnBKhaJEpMc9aWTjLknpOhY4p3pWB4tcqWoHX6R/tQrbqddr3kGP96BKz3AM3sJ8jFd+NKWtjtpzrBOKtI9rDjrFyYYY58unpS55SrxIHSJ+te4U5LQnWT5amovJmx1PIVp6aFSkZOrapAP9oOgEkmdrT+NUPOrXddh5R6RTNOEUBOY+0VQMMVLKl/KPlHXmRWlQbdE5ZYKOikYTM3r4tuUcj1ol0kNAEQVHToJMVY8qVE+VU8QXJA5Cq5McUkHoJznlr15BpqKXIWLTF69NCi6qXGrZ6nX5+3iZoBjUnUEelRzpOhpQEmdT9aMahAkwT5bepJrpvt6PGh/6K/ASxhsyio6aVap5IMVWnHBaZTYixHKljvEgCQaKdnNVpBoYcWZUQP9Rv51FnCzJUopjTeegg1Wtal2QlR5mxP5xV7fDz9oweZPi+k1JWF4cMFthzGMBSApavCPliBAtJIuamMQBYKyzoBYfQV7B4RpJ+YKV70UpyPlsOkCa6WJy/kZ24t/FaKiVEjX1InTlrRCMykhK8utt/KqgeZMnyJ9IvViFKmACQN9B9f0poYePjYsmhTjWVzLsBKbTf2CbXoRx0R4GjewWqfcAfvWocwveJhVyfb9aXK4ShJlzQfzX/emcZIfC8K+rYNgcQoEDu0hESQFEf8Adc2o59aZlBlOx/GoLU0kAJRN9zvzvU8PxBCjCkjLz/l6lKMZLb2NLKuXxWiorpHjOEkqzJUImYNO8U2AZRdOxmfSq8piY+tZ4zyY5aLVGSGOCxqVHIfCq5A6ede4k14TN5ECs+vvisLQnLAi/KpuSkhXX00NVTcfkxHT0ijDupQ60VQEpcQpXIALBJ9hVuO4aW8Q6/iQUth1akgxmfJUVJSjmkyCVaAdaAeGYmquH4MOPttKMBSkpncDkOvLrVJr2DF5aHfEcI28Pjy4pLSyQtKgVOJcH+GjZSTsbAAX5Uvw7ra3LNhKQmAPmP8AqUT8yutugFHcexak4YMrGRbiwsNf9BlAyttkbKJJVz1m5pPwhXiJ6VFKom7p90maPFYUqaYSgJEB5wlUJSn+olOck2SITHPlSPi2HcDi24hXhgJI8eYDKQR8+abedaNxHestMiEJkpKlfbWVqKEJAu5lCyYFgVXIih+KcUDLwLCAS0ENd6fEVBqEkJGiAYIJ1MmCKEJO6/ZDJLVflnF8HRh2puV5w2pZX4c8FSkhEXQIUnNM5gdqijCtqa753NlktthESVRKlyoRlTEeYqp7iq3FLUUoUheUd2QShOQkpjKQQoEqMzfMZo/4zO2lDswkygtBACQQB3eVUAJsCDr50HF+X5FjKVV6KME53bDyvErxYfU8lqUfISmisUVZxm+ZI8d/CFKghsDTwixVuVHYVbg3Ehp05QEtqaWhJ8RU4c6UlaoGbxZToAAmAKhjzLpV98IdA38aRP8A+kq9qlOclFpf94K4YqWS2DYopyEFIBi0AhN/pQakS0RR77OZJF7+X0qlWEhOVIqMXbX7PQbSxtFWDbUlsDLPURO9XYbAmcypovDNwkJOwvXsS+ECd69PHj4ts8rLKMkk/R59YSI3pU4ZJNEd7mTmO5oatUXezDOit6gMUszPOisfiUpIB1I0qjGp06WPnQns09Jl7UnIF72xoXCq8RqTqthXWmspmhjVMt1nULJFJMPCbUNiXlRFo8quSu1C4gzYb084p+TDibukQwrq5ITvrV/wqd7nnNcbGUQK53lTikaZNjtzFqNh7DT2qp8rTBUCOU2+mtR+P7uYhJt8olXvqKUPYlTkm8k7n3qfb+5GMPuOGX7iApR3Ii3le9O0YRKoIBIjWdItHnWVw6FEANeEjVZJ9oGgrScOfAQUWgC9tZ1Mcv0p0q8HTikglxaUeGwnmb9L7zUVLKpCTPWQn2qoYRJhStNhBv1gnSoLxH2EJv039ta6WRrRFYuQXhklAGRKlKPzEqt9TFVv4Z0p/qJKuqf0mxohhakp8Rk6x+U1I8ZSkeKARsDKidhFc0uP5ZyTuvQA1gh/ieWUGYHmBrRaW0gyG0x1EmqA+gCZAPUgH2Jq8Xgqtv1jnGkUkYqJek0WlxMEFIj2FL3MIkqMSU7fw7USwptQJCSYOq9OhE1Q7iy2oBaAc2gETHLrTTipbkGEGnxgUDhQ5x5SD9KpXwyCTcjaXFa840pjhnER4E5CZJTyNdJPnfSpqCod8k6YhfYKYBFzOl+VCK4W6tXhQes2j3rUhAnMbmY8hVsSZNvwoOXoaK4vkIsH2UWrxOLEakJ8RJ8z+9Sx+ES1lQkRfZJgi953Nqb4jFd2klMmI+tgKVPNuOgFRgki41HSNqFp+ENCb5JyYQ5i1JbCk5UrS2EBYCioJEjwySlKrmVASZOlKXMKtCUhaFCZItNrRpp605ZYASBr+NGt4kjW9csaEeRK1RkkYaDIEb2Jk0ScU4BtA6XPrtWixHCULAy+DyvPpSt/hy0CVAR0vSSc4+ikIwl4ZfglgoBuAYJE6kTBPOJPvVxV8s3CQQNLZjmI63mJ0k0JhTAApghuQKzz2asaSJt3APr1qxBryTUH3ABNdjhbDkyKKtnsS+ECTSLEPFcqnXSq8biS4ojYVNCRAjyArTFr6Uefkk3thIs2moIvVmJEISKVcRUcogkX2Mc61rSMr2yPF25Wn/SPxNQxOJJGWZqpUkXJMczNUUYq9hbpUSZbkydqLQJqAEAV2aDewpaOuCKAeN6ZNslSgEpzE03wfBktqzq8Sthsnr1NGctD4VUrM25IsRB3HKqs1POMcOJJI1185286z6xBINiKWLvRZmowfZ4i63NbmEx+NNWOFsJ+yCeZv+1ddd8p2E14ZyJt1i59qVZ1dRRllGTW2XofEwlNtOVGvFruySJPKKVrSVGSkyNgcoPmTXXkOK1IHIA2H6mipSktsVRp+CrEpUTmF0nYbW0PKo4NlSrgmOf81q9rAD7UFIknrGgpZx7HKT4ESArWNug5UOEbtlY8pfFaCMdxBppWudQ1iCR+QoR7tPHytj1MUgI5n9zyqKcoub7QZ96Pcp6NP+PBR+WzZ8K4yHsrZSLgkk/pe3Wqcc6cyUjNmm8GLedLOAupJVKwCRlSVDQGxgc4ne1NU8NbCRkfTKTAmFCdY1kUr3tkoyhCVJBq3BGXMJ06x5akwaWo4Nl8RdKUxckCfcm1ewLZbK1OQpc3jQfr59KveWlbgcUDcQEnSJ+75illkT+pFItY0+L8neHssickmDdRJMnz0pqW0FMQDz/nKohAHiukDawBva1VJcm6NZPTYe96rJr6UZXJylysqfYjSutNqI8UD+cqvdJUqbQIAHlXFkzYedc8dq2jlkV0mAYpkgybi0cwb39qrbWCARprp/IqzieLFkjzNtLc9qWLVIBtvvfzpONeBuQ0FeihWHzMKg2ER+dFtQSJ0rqOTL2XlawSBU1YtOWd6hisUECBpekT+IJMDQUTuX2IcYxRSJasSq8CdZm1PMEk5EzM5RPnFCcOY1JFHuOBImpTxo0YcjSt+DjzgSJrPY7FFwkA1PiOMKjlT/tQKgEjKPU7k8qjJrxEDk5O2Wo0tRrDUQT6VVgmJ10o90XFV6fFb5Mjln6QNxZ4JQJMTMedIEYlagM146RTXtAoHuwL6n8KWAVokxEtEXHQASa42JihOIOXy1bwlOp9BXRlSOasZEWqJFSyUTw7AlxUaJGp/LzpUxkmN+BoCWQQLqJk7m5Ao6ag5lSAkCALCunSlvZo8KgHFnM4EDUCTyAOlqBd4C2olSlGSZO1FK/vSvmIPpMH61Z3lNwXknzomnCKKsyoHuo/kKMQmNB6nX9q9XqZxUfCJQ+XkipV7G/Ovd5vc7fvXq9QKlbOIymOQ31NLeKYNtyVALCukR01P5V6vVyQk5OO0LBgBufreR5i58qkMM318h9dNK7XqyuTsDm35ILcTtl9eWmprpe+yBH08q9Xq5KxbY6wQhAETauu4nXMSb6kQemhrlerVLFFoEZu6GeEV3iJggTvvG/lNSJAMb/SvV6ipMaWNFbS5FlaGPbzqpeIVN7J0mvV6mbYsIqy7jLYyocA1H4iRSlxnMABb6V6vUIu0CWio2J0m3WrQ9A1ne5P48q5XqDGRRiXSo23onBYPc16vU0UK/NDFSgkXpXjcQVev6GvV6sXVTdpGiC2BNt5R53NcbalVer1Z8e57Hk6QzZTFqG4riigoIgzMjyivV6vW8R0Y1tiUJqWWvV6oWUKncMDV7SYAFhHKvV6uYyCcMyVqCRv9Bua0CIQkJToPc9a5XqCKRB3HST+tHrsPSvV6mYUK3dahnr1eqpnb2f/2Q==" alt="Food Festival" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">National Street Food Festival</h3>
+                    <p class="text-gray-600 mb-4">Delhi | December 1-3, 2024</p>
+                    <a href="#tickets" class="ticket-btn inline-block bg-blue-600 text-white px-6 py-2 rounded-full">Book Now</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://indiaartfair.in/app/uploads/2021/03/IMG_0850-1600x900.jpg" alt="Art Fair" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">India Art Fair</h3>
+                    <p class="text-gray-600 mb-4">New Delhi | April 5-8, 2024</p>
+                    <a href="#tickets" class="ticket-btn inline-block bg-blue-600 text-white px-6 py-2 rounded-full">Book Now</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-samay-raina-unfiltered-0-2023-3-8-t-6-16-0.jpg" alt="Comedy Festival" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">Comedy Festival India</h3>
+                    <p class="text-gray-600 mb-4">Pune | May 20-22, 2024</p>
+                    <a href="#tickets" class="ticket-btn inline-block bg-blue-600 text-white px-6 py-2 rounded-full">Book Now</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlmQPo2oxGTd9i-DuRaSQlZ0IM6JWnW7kQfQ&s" alt="Fashion Week" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">India Fashion Week</h3>
+                    <p class="text-gray-600 mb-4">Mumbai | September 15-20, 2024</p>
+                    <a href="#tickets" class="ticket-btn inline-block bg-blue-600 text-white px-6 py-2 rounded-full">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ticket Booking Section -->
+    <section id="tickets" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Book Your Tickets</h2>
+            <div class="max-w-2xl mx-auto">
+                <form class="bg-white rounded-lg shadow-md p-8">
+                    <div class="mb-6">
+                        <label class="block text-gray-700 mb-2">Select Event</label>
+                        <select class="w-full p-3 border rounded-lg" required>
+                            <option value="">Choose an event...</option>
+                            <option value="sunburn">Sunburn Festival</option>
+                            <option value="tech">India Tech Summit</option>
+                            <option value="music">Dover Lane Music Conference</option>
+                            <option value="lit">Jaipur Literature Festival</option>
+                            <option value="film">International Film Festival</option>
+                            <option value="food">National Street Food Festival</option>
+                            <option value="art">India Art Fair</option>
+                            <option value="comedy">Comedy Festival India</option>
+                            <option value="fashion">India Fashion Week</option>
+                        </select>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 mb-2">Number of Tickets</label>
+                        <input type="number" min="1" class="w-full p-3 border rounded-lg" required>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 mb-2">Contact Email</label>
+                        <input type="email" class="w-full p-3 border rounded-lg" required>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
+                        Proceed to Payment
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold text-xl mb-4">EventsIndia 2024</h3>
+                    <p class="text-gray-300">Celebrating India's finest events and festivals</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#events" class="text-gray-300 hover:text-white">Events</a></li>
+                        <li><a href="#tickets" class="text-gray-300 hover:text-white">Book Tickets</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">FAQs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300">contact@RangManch.com</li>
+                        <li class="text-gray-300">+91 98765 43210</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">&copy; 2024 RangManch. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission handling
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your booking! We will send the confirmation to your email.');
+        });
+    </script>
+</body>
+</html>
